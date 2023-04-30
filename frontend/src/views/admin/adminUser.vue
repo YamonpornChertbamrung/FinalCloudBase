@@ -101,7 +101,7 @@
                   <th scope="col">อีเมล</th>
                 </tr>
               </thead>
-              <tbody v-for="user in users" :key="user.userId">
+              <tbody v-for="user in filteredUsers" :key="user.userId">
                 <tr v-if="users.length > 0">
                   <td>{{ user.userId }}</td>
                   <td>

@@ -982,7 +982,7 @@ async function GetTourDetail(event) {
                     province,
                     date,
                     userStatus,
-                    userState, } = unmarshall(item);
+                    userState, email, phone } = unmarshall(item);
                 return {
                     userId,
                     firstname,
@@ -993,6 +993,7 @@ async function GetTourDetail(event) {
                     date,
                     userStatus,
                     userState,
+                    email, phone
                 };
 
             }
@@ -1298,7 +1299,7 @@ async function Login(event) {
                         'Access-Control-Allow-Origin': '*',
                         'Content-Type': 'application/json'
                     },
-                    body: ('Pass' )
+                    body: ('Pass')
                 };
             } else {
                 return {
